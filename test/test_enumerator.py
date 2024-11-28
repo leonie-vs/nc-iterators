@@ -1,5 +1,6 @@
-from src.iterators.enumerator import NCEnumerate
+from src.enumerator import NCEnumerate
 
-def test_enumerator_is_an_iterator():
+
+def test_iter_returns_reference_to_enumerate_instance():
     # implement me
     pass
