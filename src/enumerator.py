@@ -8,8 +8,14 @@ class NCEnumerate:
         return self
 
     def __next__(self):
-        output = self.start, self.iterable[self.start]
-        self.start += 1
+        try:
+            output = self.start, self.iterable[self.start]
+            self.start += 1
+
+        
+        except IndexError:
+            raise StopIteration
+        
         return output
         
 
