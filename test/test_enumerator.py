@@ -23,3 +23,18 @@ def test_next_should_through_error():
 
     with pytest.raises(StopIteration):
         next(e)
+
+def test_next_iterate_single_time():
+    e = NCEnumerate(['a', 'b', 'c'])
+
+    enumerated_list = []
+
+    for i in e:
+        enumerated_list.append(i)
+
+    assert enumerated_list == [(0,'a'), (1, 'b'), (2, 'c')]
+
+    for i in e:
+        enumerated_list.append(i)
+
+    assert enumerated_list == [(0,'a'), (1, 'b'), (2, 'c')]
