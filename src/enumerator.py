@@ -20,19 +20,3 @@ class NCEnumerate:
         
 
 
-
-
-
-
-
-# def enumerates(iterable, start=0):
-#     n = start
-#     for elem in iterable:
-#         yield n, elem
-#         n += 1
-
-# list = ['a','b','c']
-
-# item = enumerates(list, start=1)
-# print(next(item))
-# print(next(item))
